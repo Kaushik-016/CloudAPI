@@ -1,0 +1,420 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  background-color: #008080;
+  padding: 1em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color:black;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+   color:black;
+
+}
+.background{
+     background-size: cover;
+     background-position: center;
+     background-image: url('utilites/vegetables-7357585_1280.webp'); /* Use your own image URL */
+}
+
+
+.hero button {
+  padding: 0.8em 1.5em;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #ff8c00;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* General button styling */
+button {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* Override specific styles for the email input field */
+input[type="email"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Links styling */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Link items */
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on links */
+.navbar-links a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-links {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar-links a {
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+  }
+}
+
+/*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}*/
+/* Style the login button */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add hover effect on button */
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+/* Optional small text style for other links */
+.form-container .small-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+/* Product List Container */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Item Styling */
+.product-list .product-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-list .product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.product-list .product-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Product Details */
+.product-list .product-item .product-info {
+  padding: 15px;
+}
+
+.product-list .product-item .product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.product-list .product-item .product-info p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.product-list .product-item .product-info .price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+/* Add to Cart Button */
+.product-list .product-item .product-info .add-to-cart {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.product-list .product-item .product-info .add-to-cart:hover {
+  background-color: #004d40;
+}
+/* Cart Items Container */
+#cart-items {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Cart Item */
+#cart-items .cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+/* Cart Item Hover Effect */
+#cart-items .cart-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Product Image in Cart */
+#cart-items .cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+/* Product Info */
+#cart-items .cart-item .product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Product Title */
+#cart-items .cart-item .product-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Product Price */
+#cart-items .cart-item .product-info .price {
+  font-size: 1rem;
+  color: #2e7d32;
+  margin-top: 5px;
+}
+
+/* Remove Item Button */
+#cart-items .cart-item .remove-item {
+  font-size: 1rem;
+  color: #d32f2f;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#cart-items .cart-item .remove-item:hover {
+  color: #c62828;
+}
+
+/* Cart Total */
+#cart-items .cart-total {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e0e0e0;
+}
+
+#cart-items .cart-total .total-price {
+  color: #2e7d32;
+}
+
+/* Checkout Button */
+#cart-items .cart-total .checkout-btn {
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cart-items .cart-total .checkout-btn:hover {
+  background-color: #004d40;
+}
